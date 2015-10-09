@@ -1,0 +1,22 @@
+name 			= Better Reads Fully Custom Theme
+description		= My first fully custom Drupal theme!
+
+core			= 7.x
+
+
+;Drupal Regions
+
+regions[page_top] = Page Top
+regions[header] = Header
+;regions[highlighted] = Highlighted
+;regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Sidebar First
+;regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+regions[page_bottom] = Page Bottom
+
+
+;Custom Regions
+
+regions[custom_nav] = Navigation Container
