@@ -136,3 +136,12 @@ function annotate_admin_settings() {
 	return system_settings_form($form);
 }
 
+/**
+* Validate annotation settings submission.
+*/
+function annotate_admin_settings_validate($form, &$form_state) {
+	$limit = $form_state['values']['annotate_limit_per_node'];
+	if (!is_numeric($limit)) {
+		form_set_error('annotate_limit_per_node', t('Please enter number.'));
+	}
+}
